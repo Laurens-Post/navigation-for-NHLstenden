@@ -2,4 +2,4 @@
 App die de wegwijst door NHL Stenden!
 
 Opgezet door: 
-Roykie, Manasse en Post
+Roykie, Manasse en Postbode
