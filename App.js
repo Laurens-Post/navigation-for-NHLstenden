@@ -1,19 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react'
+import { Text, View } from 'react-native'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hoi Roykie</Text>
-    </View>
-  );
+class Home extends Component {
+   state = {
+      myState: 'Lorem ipsum'
+   }
+   updateState = () => this.setState({ myState: 'The state is fuckeddddd'})
+   render() {
+      return (
+         <View>
+			<Text> </Text>
+            <Text onPress = {this.updateState}>
+               {this.state.myState}
+            </Text>
+         </View>
+      );
+   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default Home;
